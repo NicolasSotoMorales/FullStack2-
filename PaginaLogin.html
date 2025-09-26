@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Login / Registro</title>
+  <link rel="stylesheet" href="CarpetaCss/estiloLogin.css">
+  <link rel="stylesheet" href="CarpetaCss/EstilosPaginaPrincipal.css">
+</head>
+<body>
+  <header>
+  <a class="logo" href="PaginaPrincipal.html">Ventas Vanessa</a>
+  <nav>
+    <a href="PaginaPrincipal.html">Inicio</a>
+    <a href="PaginaBlog.html">Blog</a>
+    <a href="PaginaContacto.html">Contacto</a>
+    <a href="PaginaCarrito.html" class="cart-link">Carrito</a>
+
+    <a href="PaginaLogin.html" class="login-btn">Iniciar / Registrarse</a>
+  </nav>
+</header>
+  <main class="auth-wrapper">
+    <!-- Login -->
+<div class="form-box login">
+  <h2>Login</h2>
+  <form id="login">
+    <div class="input-box">
+      <input type="email" id="login-email" placeholder="Enter your email" required>
+    </div>
+    <div class="input-box">
+      <input type="password" id="login-password" placeholder="Confirm a password" required>
+    </div>
+    <button type="submit" class="btn">Iniciar Sesión</button>
+  </form>
+</div>
+
+<!-- Registro -->
+<div class="form-box register">
+  <h2>Registration</h2>
+  <form id="register">
+    <div class="input-box">
+      <input type="text" id="nombre" placeholder="Enter your name" required>
+    </div>
+    <div class="input-box">
+      <input type="email" id="register-email" placeholder="Enter your email" required>
+    </div>
+    <div class="input-box">
+      <input type="password" id="register-password" placeholder="Create a password" required>
+    </div>
+    <div class="input-box">
+      <input type="password" id="register-password2" placeholder="Confirm a password" required>
+    </div>
+    <button type="submit" class="btn">Registrarse</button>
+  </form>
+</div>
+
+  </main>
+<script src="CarpetaJS/login.js"></script>
+</body>
+</html>
+

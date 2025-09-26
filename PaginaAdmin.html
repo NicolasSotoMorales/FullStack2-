@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administrar Productos</title>
+  <link rel="stylesheet" href="CarpetaCss/EstilosPaginaPrincipal.css">
+</head>
+<body>
+
+<header>
+  <a class="logo" href="PaginaPrincipal.html">Ventas Vanessa</a>
+  <nav>
+    <a href="PaginaPrincipal.html">Inicio</a>
+    <a href="PaginaBlog.html">Blog</a>
+    <a href="PaginaContacto.html">Contacto</a>
+    <a href="PaginaCarrito.html" class="cart-link">Carrito</a>
+    <a href="PaginaLogin.html" class="login-btn">Cerrar Sesión</a>
+  </nav>
+</header>
+
+<main class="contenedor">
+  <h2>Panel de Administración</h2>
+
+  <section class="form-admin">
+    <h3>Agregar Prenda</h3>
+    <form id="form-producto">
+      <input type="text" id="nombre-prenda" placeholder="Nombre de la prenda" required>
+      <input type="number" id="precio-prenda" placeholder="Precio" required>
+      <textarea id="descripcion-prenda" placeholder="Descripción" required></textarea>
+      <button type="submit">Agregar Prenda</button>
+    </form>
+  </section>
+
+  <section class="lista-productos">
+    <h3>Lista de Productos</h3>
+    <table border="1" width="100%" id="tabla-productos">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Descripción</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+</main>
+
+<script src="admin.js"></script>
+</body>
+</html>
